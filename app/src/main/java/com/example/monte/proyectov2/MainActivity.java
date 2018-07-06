@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton button2;
     private Button button3;
     private Button buttonAlimentacion;
+    private Button buttonAlertas;
 
     private static final String VIDEO_SAMPLE = "tacoma_narrows";
     private VideoView mVideoView;
@@ -118,6 +119,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonAlertas = (Button) findViewById(R.id.button_alertas);
+        buttonAlertas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OpenAlertasActivity();
+            }
+        });
+
     }
 
     public void openEjerciciosActivity(){
@@ -127,6 +136,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void OpenAlimentacionActivity(){
         Intent intent = new Intent(this, Alimentacion.class);
+        startActivity(intent);
+    }
+
+    public void OpenAlertasActivity(){
+        Intent intent = new Intent(this, Alertas.class);
         startActivity(intent);
     }
 
