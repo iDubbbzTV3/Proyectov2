@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="*Bowl of Oatmeal w/ One Scoop Protein
-        Powder
+ Powder
 *High Grade Omega-3's
 *Glass of Skim Milk"
         android:layout_marginLeft="32dp"

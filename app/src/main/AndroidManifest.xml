@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.monte.proyectov2">
-    
-<uses-permission android:name="android.permission.SET_ALARM">
-</uses-permission>
+
+    <uses-permission android:name="android.permission.SET_ALARM"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,9 +26,22 @@
         <activity android:name=".VideoActivity" />
         <activity android:name=".ActividadEjemplo1" />
         <activity android:name=".ActividadEjemplo2" />
-        <activity android:name=".Alimentacion" />
-        <activity android:name=".Alertas"></activity>
-        <receiver android:name=".Notification_receiver"></receiver>
+        <activity
+            android:name=".Alimentacion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Alertas"
+            android:screenOrientation="portrait"></activity>
+
+        <receiver android:name=".Notification_receiver" />
+        <receiver android:name=".NotificationReceiverSnack1" />
+        <receiver android:name=".NotificationReceiverAlmuerzo" />
+        <receiver android:name=".NotificationReceiverSnack2" />
+        <receiver android:name=".NotificationReceiverCena" />
+        <receiver android:name=".NotificationReceiverSnack3" />
+        <receiver android:name=".NotificationReceiverBedtime" />
+
+        <activity android:name=".EjerciciosDiarios"></activity>
     </application>
 
 </manifest>

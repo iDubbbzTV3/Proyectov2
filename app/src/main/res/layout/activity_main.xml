@@ -112,6 +112,7 @@
                 android:text="pulso"
                 android:drawableTop="@drawable/alarmblack"
                 android:layout_margin="8dp"
+                android:id="@+id/button_diario"
                 />
 
 
