@@ -54,7 +54,6 @@ public class ActividadEjemplo3 extends AppCompatActivity {
             // Skipping to 1 shows the first frame of the video.
             mVideoView.seekTo(1);
         }
-        mVideoView.start();
     }
 
     private void releasePlayer() {

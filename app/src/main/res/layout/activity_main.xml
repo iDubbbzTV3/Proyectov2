@@ -98,6 +98,7 @@
                 <Button
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:gravity="center"
                     android:drawableTop="@drawable/food"
                     android:text="diet"
                     android:id="@+id/button_alimentacion"
@@ -113,6 +114,8 @@
                 <Button
                     android:layout_width="100dp"
                     android:layout_height="100dp"
+                    android:gravity="center"
+
                     android:text="alerts"
                     android:drawableTop="@drawable/alarmblack"
                     android:layout_margin="8dp"
@@ -126,6 +129,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
                 <Button
+                    android:gravity="center"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:text="exercises"
