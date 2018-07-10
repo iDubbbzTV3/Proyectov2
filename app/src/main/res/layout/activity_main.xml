@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="#000"
+    android:background="#8bd1ff"
     >
 
     <LinearLayout
@@ -16,31 +16,41 @@
         android:layout_weight="2"
         android:orientation="horizontal"
         >
-
-        <ImageButton
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/search"
-            android:background="#000"
-            android:id="@+id/buttonejercicios"
-            />
+            android:layout_weight="1">
+            <ImageButton
+                android:layout_gravity="start"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/search"
+                android:background="#8bd1ff"
+                android:id="@+id/buttonejercicios"
+                />
+        </LinearLayout>
 
-        <ImageView
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:src="@drawable/screenshot"
-            />
-
-        <ImageButton
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:src="@drawable/woman_running"
+                />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/settings"
-            android:background="#000"
-            android:id="@+id/buttonejercicios2"
-            />
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+
+
+
 
     </LinearLayout>
     <LinearLayout
@@ -48,29 +58,24 @@
         android:layout_height="0dp"
         android:layout_weight="6"
         >
-        <FrameLayout
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            >
-            <VideoView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/video_main"
-                />
-        </FrameLayout>
+            android:src="@drawable/abs"
+            android:scaleType="fitXY"
+            />
     </LinearLayout>
-
-
-
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
         android:layout_marginBottom="10dp"
-        android:text="Ejercicio de hoy"
+        android:text="Today's Exercise"
         android:id="@+id/buttonejercicios3"
-
+        android:textSize="24sp"
+        android:textColor="#FFF"
+        android:background="@color/colorPrimaryDark"
         />
 
     <LinearLayout
@@ -86,34 +91,51 @@
             android:orientation="horizontal"
             android:padding="16dp"
             >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:drawableTop="@drawable/food"
+                    android:text="diet"
+                    android:id="@+id/button_alimentacion"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/oval_shape"
+                    />
+            </LinearLayout>
 
-            <Button
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="alerts"
+                    android:drawableTop="@drawable/alarmblack"
+                    android:layout_margin="8dp"
+                    android:id="@+id/button_alertas"
+                    android:background="@drawable/oval_shape"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:drawableTop="@drawable/alarmblack"
-                android:text="dieta"
-                android:id="@+id/button_alimentacion"
-                android:layout_margin="8dp"
-                />
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="alertas"
-                android:drawableTop="@drawable/alarmblack"
-                android:layout_margin="8dp"
-                android:id="@+id/button_alertas"
-                />
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="pulso"
-                android:drawableTop="@drawable/alarmblack"
-                android:layout_margin="8dp"
-                android:id="@+id/button_diario"
-                />
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="exercises"
+                    android:drawableTop="@drawable/weight"
+                    android:layout_margin="8dp"
+                    android:id="@+id/button_diario"
+                    android:background="@drawable/oval_shape"
+                    />
+            </LinearLayout>
+
 
 
         </LinearLayout>

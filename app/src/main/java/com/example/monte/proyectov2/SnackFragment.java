@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class SnackFragment extends Fragment {
     private static final String TAG = "SnackFragment";
 
@@ -26,7 +28,22 @@ public class SnackFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textView.setText("LAS PAPAYAS, LO LOGRE");
+                Random rand = new Random();
+                int n = rand.nextInt(5);
+                switch (n){
+                    case 1:
+                        textView.setText("*A Bag of Pretzels with Spicy Mustard\n*Fat Free Yogurt\n*Bottle of Water");
+                        break;
+                    case 2:
+                        textView.setText("*Protein Shake OR \n*Air Popped Popcorn with Sprinkled\nParmesan Cheese\n*Bottle of Water");
+                        break;
+                    case 3:
+                        textView.setText("*Peanut Butter\n*Sliced Green Apple\n*Bottle of Water");
+                        break;
+                    case 4:
+                        textView.setText("Turkey / Beef Jerky \n*Saltine Crackers\n*Bottle of Water");
+                        break;
+                }
             }
         });
         return view;

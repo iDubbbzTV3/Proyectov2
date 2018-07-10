@@ -11,6 +11,9 @@
         android:text="SHUFFLE"
         android:textSize="40sp"
         android:id="@+id/button_shuffle_almuerzo"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFF"
+
 
         />
 
@@ -19,8 +22,9 @@
         android:layout_height="wrap_content"
         android:text="Lunch"
         android:layout_marginLeft="32dp"
-        android:textSize="22sp"
+        android:textSize="28sp"
         android:layout_marginBottom="22dp"
+
         />
     <TextView
         android:layout_width="match_parent"
@@ -32,6 +36,7 @@
 *Bottle of Water"
         android:layout_marginLeft="32dp"
         android:id="@+id/text_lunch"
+        android:textSize="20sp"
         />
 
 </LinearLayout>

@@ -52,9 +52,40 @@ public class AdapterRecEjercicios extends RecyclerView.Adapter<AdapterRecEjercic
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, listItem.getHead(), Toast.LENGTH_LONG).show();
-                if(listItem.getHead().equals("3")){
+                if(listItem.getHead().equals("Jackknives")){
                     Intent openThree = new Intent(context,ActividadEjemplo1.class);
+                    context.startActivity(openThree);
+                }
+                if(listItem.getHead().equals("Marching Planks")){
+                    Intent openThree = new Intent(context,ActividadEjemplo2.class);
+                    context.startActivity(openThree);
+                }
+                if(listItem.getHead().equals("Side Plank Lifts")){
+                    Intent openThree = new Intent(context,ActividadEjemplo3.class);
+                    context.startActivity(openThree);
+                }
+                if(listItem.getHead().equals("Seated Ab Circles")){
+                    Intent openThree = new Intent(context,ActividadEjemplo4.class);
+                    context.startActivity(openThree);
+                }
+                if(listItem.getHead().equals("90/90 Crunch")){
+                    Intent openThree = new Intent(context,ActividadEjemplo5.class);
+                    context.startActivity(openThree);
+                }
+                if(listItem.getHead().equals("Russian V Tuck Twists")){
+                    Intent openThree = new Intent(context,ActividadEjemplo6.class);
+                    context.startActivity(openThree);
+                }
+                if(listItem.getHead().equals("ISO Reverse Crunches")){
+                    Intent openThree = new Intent(context,ActividadEjemplo7.class);
+                    context.startActivity(openThree);
+                }
+                if(listItem.getHead().equals("Bent Knee Windshield Wipers")){
+                    Intent openThree = new Intent(context,ActividadEjemplo8.class);
+                    context.startActivity(openThree);
+                }
+                if(listItem.getHead().equals("Side Crunches")){
+                    Intent openThree = new Intent(context,ActividadEjemplo9.class);
                     context.startActivity(openThree);
                 }
 

@@ -29,40 +29,19 @@ public class DesayunoFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Random rand = new Random();
-                int n = rand.nextInt(12);
+                int n = rand.nextInt(5);
                 switch (n){
                     case 1:
-                        textView.setText("1");
+                        textView.setText("*Protein Shake");
                         break;
                     case 2:
-                        textView.setText("2");
+                        textView.setText("*Whole Wheat Waffles w/ Applesauce \n*High Grade Omega-3's\nProtein Shake");
                         break;
                     case 3:
-                        textView.setText("3");
+                        textView.setText("*Whole Wheat Toast\n*Egg White Souffle (5 Egg Whites Mixed\nin a Glass Bowl Microwave on High for\n4 minutes)\n*High Grade Omega-3's");
                         break;
                     case 4:
-                        textView.setText("4");
-                        break;
-                    case 5:
-                        textView.setText("5");
-                        break;
-                    case 6:
-                        textView.setText("6");
-                        break;
-                    case 7:
-                        textView.setText("7");
-                        break;
-                    case 8:
-                        textView.setText("8");
-                        break;
-                    case 9:
-                        textView.setText("9");
-                        break;
-                    case 10:
-                        textView.setText("10");
-                        break;
-                    case 11:
-                        textView.setText("11");
+                        textView.setText("Bowl of Oatmeal (add Cinamon + \nWalnuts)\n*Glass of Skim Milk\n*Scrambled Egg Whites with Salsa\n*High Grade Omega-3's");
                         break;
                 }
             }

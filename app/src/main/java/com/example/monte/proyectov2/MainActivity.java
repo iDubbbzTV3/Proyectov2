@@ -33,31 +33,31 @@ public class MainActivity extends AppCompatActivity {
     private Uri getMedia(String ian) {
         if(day == Calendar.MONDAY){
             return Uri.parse("android.resource://" + getPackageName() +
-                    "/raw/" + R.raw.ian);
+                    "/raw/" + R.raw.ejercicio8);
         }
         if(day == Calendar.TUESDAY){
             return Uri.parse("android.resource://" + getPackageName() +
-                    "/raw/" + R.raw.ian);
+                    "/raw/" + R.raw.ejercicio9);
         }
         if(day == Calendar.WEDNESDAY){
             return Uri.parse("android.resource://" + getPackageName() +
-                    "/raw/" + R.raw.dog);
+                    "/raw/" + R.raw.ejercicio1);
         }
         if(day == Calendar.THURSDAY){
             return Uri.parse("android.resource://" + getPackageName() +
-                    "/raw/" + R.raw.ian);
+                    "/raw/" + R.raw.ejercicio4);
         }
         if(day == Calendar.FRIDAY){
             return Uri.parse("android.resource://" + getPackageName() +
-                    "/raw/" + R.raw.ian);
+                    "/raw/" + R.raw.ejercicio10);
         }
         if(day == Calendar.SATURDAY){
             return Uri.parse("android.resource://" + getPackageName() +
-                    "/raw/" + R.raw.ian);
+                    "/raw/" + R.raw.ejercicio2);
         }
         else{
             return Uri.parse("android.resource://" + getPackageName() +
-                    "/raw/" + R.raw.ian);
+                    "/raw/" + R.raw.ejercicio3);
         }
 
     }
@@ -70,34 +70,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mVideoView = findViewById(R.id.video_main);
-        MediaController controller = new MediaController(this);
-        controller.setMediaPlayer(mVideoView);
-        mVideoView.setMediaController(controller);
-
-        mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                mp.setLooping(true);
-            }
-        });
-
-        //String videoPath = "android.resource://" + getPackageName() + "/" + R.raw.ian;
-
-        if (savedInstanceState != null) {
-            mCurrentPosition = savedInstanceState.getInt(PLAYBACK_TIME);
-        }
-
         button = (ImageButton) findViewById(R.id.buttonejercicios);
         button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openEjerciciosActivity();
-            }
-        });
-
-        button2 = (ImageButton) findViewById(R.id.buttonejercicios2);
-        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openEjerciciosActivity();
@@ -108,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openEjerciciosActivity();
+                openEjerciciosDiarios();
             }
         });
 
@@ -157,50 +131,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Alertas.class);
         startActivity(intent);
     }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-        outState.putInt(PLAYBACK_TIME, mVideoView.getCurrentPosition());
-    }
-
-    private void initializePlayer() {
-        Uri videoUri = getMedia(VIDEO_SAMPLE);
-        mVideoView.setVideoURI(videoUri);
-        if (mCurrentPosition > 0) {
-            mVideoView.seekTo(mCurrentPosition);
-        } else {
-            // Skipping to 1 shows the first frame of the video.
-            mVideoView.seekTo(1);
-        }
-        mVideoView.start();
-    }
-
-    private void releasePlayer() {
-        mVideoView.stopPlayback();
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        initializePlayer();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        releasePlayer();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
-            mVideoView.pause();
-        }
-    }
-
 
 }

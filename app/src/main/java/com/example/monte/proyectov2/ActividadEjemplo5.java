@@ -2,19 +2,18 @@ package com.example.monte.proyectov2;
 
 import android.net.Uri;
 import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class ActividadEjemplo1 extends AppCompatActivity {
-
+public class ActividadEjemplo5 extends AppCompatActivity {
     private static final String VIDEO_SAMPLE = "tacoma_narrows";
     private VideoView mVideoView;
 
     private Uri getMedia(String ian) {
         return Uri.parse("android.resource://" + getPackageName() +
-                "/raw/" + R.raw.ejercicio6);
+                "/raw/" + R.raw.ejercicio4);
     }
 
     private int mCurrentPosition = 0;
@@ -54,7 +53,7 @@ public class ActividadEjemplo1 extends AppCompatActivity {
             // Skipping to 1 shows the first frame of the video.
             mVideoView.seekTo(1);
         }
-
+        mVideoView.start();
     }
 
     private void releasePlayer() {
@@ -81,7 +80,4 @@ public class ActividadEjemplo1 extends AppCompatActivity {
             mVideoView.pause();
         }
     }
-
-
-
 }

@@ -1,6 +1,5 @@
 package com.example.monte.proyectov2;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -14,7 +13,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Day1 extends Fragment {
+public class Day2 extends Fragment {
 
     private RecyclerView recyclerView;
     private AdapterRecEjercicios adapter;
@@ -32,40 +31,40 @@ public class Day1 extends Fragment {
         listItems = new ArrayList<>();
 
         final ListaEjercicios listItem1 = new ListaEjercicios(
-                "Hands Back Tucks",
+                "ISO Reverse Crunches",
                 "30 seconds"
         );
         listItems.add(listItem1);
         ListaEjercicios listItem2 = new ListaEjercicios(
-                "Marching Planks",
+                "Mountain Climbers",
                 "60 seconds"
         );
         listItems.add(listItem2);
         ListaEjercicios listItem3 = new ListaEjercicios(
-                "Side Plank Lifts",
-                "30 seconds"
+                "Bent Knee Winshield Wipers",
+                "60 seconds"
         );
         listItems.add(listItem3);
         ListaEjercicios listItem4 = new ListaEjercicios(
+                "Side Crunches",
+                "60 seconds"
+        );
+        ListaEjercicios listItem7 = new ListaEjercicios(
                 "Rest",
                 "45 seconds"
         );
+        listItems.add(listItem7);
         listItems.add(listItem4);
         ListaEjercicios listItem5 = new ListaEjercicios(
-                "Seated Ab Circles",
-                "60 seconds"
+                "Jackknives",
+                "30 seconds"
         );
         listItems.add(listItem5);
         ListaEjercicios listItem6 = new ListaEjercicios(
-                "90/90 Crunch",
+                "Standing Ab Twists",
                 "30 seconds"
         );
         listItems.add(listItem6);
-        ListaEjercicios listItem7 = new ListaEjercicios(
-                "Russian V Tuck Twists",
-                "30 seconds"
-        );
-        listItems.add(listItem7);
 
         adapter = new AdapterRecEjercicios(listItems, getContext());
 

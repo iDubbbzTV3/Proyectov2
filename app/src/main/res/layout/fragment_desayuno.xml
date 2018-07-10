@@ -11,7 +11,8 @@
         android:text="SHUFFLE"
         android:textSize="40sp"
         android:id="@+id/button_shuffle_desayuno"
-
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFF"
         />
 
     <TextView
@@ -19,7 +20,7 @@
         android:layout_height="wrap_content"
         android:text="Breakfast"
         android:layout_marginLeft="32dp"
-        android:textSize="22sp"
+        android:textSize="28sp"
         android:layout_marginBottom="22dp"
         />
     <TextView
@@ -30,6 +31,7 @@
 *High Grade Omega-3's
 *Glass of Skim Milk"
         android:layout_marginLeft="32dp"
+        android:textSize="20sp"
         android:id="@+id/text_breakfast"
         />
 

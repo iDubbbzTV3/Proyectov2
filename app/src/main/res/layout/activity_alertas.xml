@@ -55,18 +55,19 @@
             >
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_height="match_parent"
                 android:text="Breakfast"
                 android:gravity="center"
+                android:textSize="18sp"
                 />
             <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="-"
                 android:id="@+id/button_negative_breakfast"
-                android:layout_weight="1"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
                 />
             <LinearLayout
                 android:layout_width="0dp"
@@ -80,6 +81,8 @@
                     android:id="@+id/textview_time_breakfast_hour"
                     android:layout_weight="2"
                     android:gravity="center|end"
+                    android:textSize="18sp"
+
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -95,16 +98,18 @@
                     android:id="@+id/textview_time_breakfast_minute"
                     android:layout_weight="2"
                     android:gravity="center|start"
+                    android:textSize="18sp"
+
                     />
             </LinearLayout>
 
             <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="+"
                 android:id="@+id/button_positive_breakfast"
-                android:layout_weight="1"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
                 />
             <Switch
                 android:layout_width="0dp"
@@ -112,6 +117,8 @@
                 android:id="@+id/switch_breakfast"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:theme="@style/SCBSwitch"
+
                 />
 
         </LinearLayout>
@@ -123,18 +130,20 @@
             >
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_height="match_parent"
                 android:text="Snack 1"
                 android:gravity="center"
+                android:textSize="18sp"
+
                 />
             <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="-"
                 android:id="@+id/button_negative_snack1"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
                 />
             <LinearLayout
                 android:layout_width="0dp"
@@ -148,6 +157,8 @@
                     android:id="@+id/textview_time_snack1_hour"
                     android:layout_weight="2"
                     android:gravity="center|end"
+                    android:textSize="18sp"
+
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -163,15 +174,17 @@
                     android:id="@+id/textview_time_snack1_minute"
                     android:layout_weight="2"
                     android:gravity="center|start"
+                    android:textSize="18sp"
+
                     />
             </LinearLayout>
             <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="+"
                 android:id="@+id/button_positive_snack1"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
                 />
             <Switch
 
@@ -180,6 +193,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/switch_snack1"
                 android:gravity="center"
+                android:theme="@style/SCBSwitch"
+
                 />
 
         </LinearLayout>
@@ -192,18 +207,20 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_height="match_parent"
                 android:text="Lunch"
                 android:gravity="center"
+                android:textSize="18sp"
                 />
             <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="-"
                 android:id="@+id/button_negative_lunch"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
+
                 />
             <LinearLayout
                 android:layout_width="0dp"
@@ -217,6 +234,8 @@
                     android:id="@+id/textview_time_lunch_hour"
                     android:layout_weight="2"
                     android:gravity="center|end"
+                    android:textSize="18sp"
+
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -232,15 +251,17 @@
                     android:id="@+id/textview_time_lunch_minute"
                     android:layout_weight="2"
                     android:gravity="center|start"
+                    android:textSize="18sp"
+
                     />
             </LinearLayout>
             <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="+"
                 android:id="@+id/button_positive_lunch"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
                 />
             <Switch
                 android:layout_width="0dp"
@@ -248,6 +269,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/switch_lunch"
                 android:gravity="center"
+                android:theme="@style/SCBSwitch"
+
                 />
 
         </LinearLayout>
@@ -259,18 +282,20 @@
             >
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_height="match_parent"
                 android:text="Snack 2"
                 android:gravity="center"
+                android:textSize="18sp"
+
                 />
             <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="-"
                 android:id="@+id/button_negative_snack2"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
                 />
             <LinearLayout
                 android:layout_width="0dp"
@@ -284,6 +309,8 @@
                     android:id="@+id/textview_time_snack2_hour"
                     android:layout_weight="2"
                     android:gravity="center|end"
+                    android:textSize="18sp"
+
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -299,15 +326,18 @@
                     android:id="@+id/textview_time_snack2_minute"
                     android:layout_weight="2"
                     android:gravity="center|start"
+                    android:textSize="18sp"
+
                     />
             </LinearLayout>
             <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="+"
                 android:id="@+id/button_positive_snack2"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
+
                 />
             <Switch
                 android:layout_width="0dp"
@@ -315,6 +345,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/switch_snack2"
                 android:gravity="center"
+                android:theme="@style/SCBSwitch"
+
                 />
 
         </LinearLayout>
@@ -327,18 +359,21 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_height="match_parent"
                 android:text="Dinner"
                 android:gravity="center"
+                android:textSize="18sp"
+
                 />
             <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="-"
                 android:id="@+id/button_negative_dinner"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
+
                 />
             <LinearLayout
                 android:layout_width="0dp"
@@ -352,6 +387,8 @@
                     android:id="@+id/textview_time_dinner_hour"
                     android:layout_weight="2"
                     android:gravity="center|end"
+                    android:textSize="18sp"
+
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -367,15 +404,17 @@
                     android:id="@+id/textview_time_dinner_minute"
                     android:layout_weight="2"
                     android:gravity="center|start"
+                    android:textSize="18sp"
+
                     />
             </LinearLayout>
             <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="+"
                 android:id="@+id/button_positive_dinner"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
                 />
             <Switch
                 android:layout_width="0dp"
@@ -383,6 +422,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/switch_dinner"
                 android:gravity="center"
+                android:theme="@style/SCBSwitch"
+
                 />
 
         </LinearLayout>
@@ -395,18 +436,21 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_height="match_parent"
                 android:text="Snack 3"
                 android:gravity="center"
+                android:textSize="18sp"
+
                 />
             <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="-"
                 android:id="@+id/button_negative_snack3"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
+
                 />
             <LinearLayout
                 android:layout_width="0dp"
@@ -420,6 +464,7 @@
                     android:id="@+id/textview_time_snack3_hour"
                     android:layout_weight="2"
                     android:gravity="center|end"
+                    android:textSize="18sp"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -435,15 +480,17 @@
                     android:id="@+id/textview_time_snack3_minute"
                     android:layout_weight="2"
                     android:gravity="center|start"
+                    android:textSize="18sp"
+
                     />
             </LinearLayout>
             <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="+"
                 android:id="@+id/button_positive_snack3"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
                 />
             <Switch
                 android:layout_width="0dp"
@@ -451,6 +498,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/switch_snack3"
                 android:gravity="center"
+                android:theme="@style/SCBSwitch"
+
                 />
 
         </LinearLayout>
@@ -463,18 +512,20 @@
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_height="match_parent"
                 android:text="Bedtime"
                 android:gravity="center"
+                android:textSize="18sp"
+
                 />
             <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="-"
                 android:id="@+id/button_negative_bedtime"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
                 />
             <LinearLayout
                 android:layout_width="0dp"
@@ -488,6 +539,7 @@
                     android:id="@+id/textview_time_bedtime_hour"
                     android:layout_weight="2"
                     android:gravity="center|end"
+                    android:textSize="18sp"
                     />
                 <TextView
                     android:layout_width="0dp"
@@ -503,15 +555,17 @@
                     android:id="@+id/textview_time_bedtime_minute"
                     android:layout_weight="2"
                     android:gravity="center|start"
+                    android:textSize="18sp"
+
                     />
             </LinearLayout>
             <Button
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:text="+"
                 android:id="@+id/button_positive_bedtime"
                 android:gravity="center"
+                android:background="@drawable/oval_shape"
                 />
             <Switch
                 android:layout_width="0dp"
@@ -519,6 +573,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/switch_bedtime"
                 android:gravity="center"
+                android:theme="@style/SCBSwitch"
                 />
 
         </LinearLayout>
